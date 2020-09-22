@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:clickable="true"
+        app:cardElevation="2dp"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/iv_tagihan"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/gambar2"/>
+            <TextView
+                android:id="@+id/tv_tgh_toko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warung Cak Man"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_tagihan"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_tgh_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Liter"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@+id/tv_tgh_toko"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_tagihan"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_tgh_toko">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_tgh_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp. 8.000,-"
+                android:textAlignment="textEnd"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_tgh_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="DIBAYAR"
+                android:textAlignment="textEnd"
+                android:textColor="#000"
+                android:textSize="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

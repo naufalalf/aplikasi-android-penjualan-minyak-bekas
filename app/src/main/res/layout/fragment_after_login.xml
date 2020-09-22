@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AfterLoginFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:background="@drawable/large">
+            <ImageView
+                android:id="@+id/iv_picUser"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_person_black_24dp"
+                android:background="@drawable/corne5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_idUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="110sp"
+                    android:text="You are Loged In"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="bottom"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:elevation="5dp">
+            <TextView
+                android:id="@+id/total_saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="TOTAL SALDO"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_saldo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Rp. 8.000,00"/>
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp"/>
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jual Minyak"
+            android:id="@+id/btn_jualMinyak"
+            android:textColor="@color/blue"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:shadowColor="#000"
+            android:background="@drawable/corner2"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Log Out"
+            android:shadowColor="#000"
+            android:textColor="#fff"
+            android:id="@+id/btn_signOut"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:background="#CE1002"></Button>
+    </LinearLayout>
+
+</FrameLayout>

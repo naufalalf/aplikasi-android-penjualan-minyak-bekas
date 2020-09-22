@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bganyar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/Ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/large"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:focusedByDefault="false"
+            android:background="@drawable/corner"
+            android:layout_margin="5dp">
+        </androidx.appcompat.widget.SearchView>
+        <Spinner
+            android:id="@+id/spinner_kota"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/kota"
+            android:background="@drawable/corner"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terbaru"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Lihat Semua"
+                    android:elevation="20dp"
+                    android:shadowColor="@color/blue"
+                    android:clickable="true"
+                    android:textColor="#2D46D8" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_terbaru"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terdekat"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_all2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:shadowColor="@color/blue"
+                    android:clickable="true"
+                    android:elevation="20dp"
+                    android:text="Lihat Semua"
+                    android:textColor="#2D46D8" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_terdekat"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

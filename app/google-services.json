@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "942831070048",
+    "firebase_url": "https://wasteoil-1570855426241.firebaseio.com",
+    "project_id": "wasteoil-1570855426241",
+    "storage_bucket": "wasteoil-1570855426241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942831070048:android:5be47c6ae81799eb2e4c05",
+        "android_client_info": {
+          "package_name": "com.gigih.wasteoil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942831070048-92clbc2dlitnem8j74kk0n64dcu95va5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gigih.wasteoil",
+            "certificate_hash": "e049a208850c9c15bc043c7e385d21b11594a8f1"
+          }
+        },
+        {
+          "client_id": "942831070048-nlgom84g2a7lh9hc5arq11i3auu5c33m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5wDN7SMPZQXV9pE5-SfPeWpNiBmywfL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942831070048-nlgom84g2a7lh9hc5arq11i3auu5c33m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

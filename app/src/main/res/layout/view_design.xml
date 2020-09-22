@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:clickable="true"
+        app:cardElevation="2dp"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/iv_tagihan"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/gambar2"/>
+            <TextView
+                android:id="@+id/LOKASI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warung Cak Man"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_tagihan"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/HARGA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_tagihan"
+                android:text="Rp. 4.000,-"
+                android:layout_below="@id/LOKASI"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_liter_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / L"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@id/LOKASI"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/HARGA"
+                />
+
+            <TextView
+                android:id="@+id/STOCK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_tagihan"
+                android:text="2 liter"
+                android:layout_below="@+id/tv_liter_design"
+                android:layout_marginTop="1dp"
+                android:textColor="#000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_tgh_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HARGA"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/iv_tagihan"
+                android:text="Status : "
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_status_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HARGA"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textEnd"
+                android:layout_toRightOf="@id/tv_tgh_status"
+                android:text="Belum Terjual"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

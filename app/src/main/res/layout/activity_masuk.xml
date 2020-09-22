@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full"
+    tools:context=".MasukActivity">
+    <ImageView
+        android:id="@+id/btn_back_masuk"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/tv_logEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:background="@drawable/corner4"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tv_logPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:background="@drawable/corner4"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/masuk"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:background="@drawable/corner2"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarLog"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

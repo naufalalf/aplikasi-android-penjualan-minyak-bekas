@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">WasteOil</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="login">Masuk</string>
+    <string name="tanya">Belum punya akun?</string>
+    <string name="daftar"> DAFTAR</string>
+    <string name="nama">nama</string>
+    <string name="no_telepon">no telepon</string>
+    <string name="btndaftar">Daftar</string>
+    <string name="todo">TODO</string>
+    <string name="judul">judul</string>
+    <string name="harga">harga</string>
+    <string name="cari">Cari</string>
+
+    <string name="call">Call</string>
+    <string name="chat">Chat</string>
+    <string name="contact">Contact</string>
+    <string name="masuk">Masuk</string>
+
+
+    <string-array name="kota">
+        <item>Surabaya</item>
+        <item>Sidoarjo</item>
+        <item>Gresik</item>
+        <item>Pasuruan</item>
+        <item>Mojokerto</item>
+        <item>Lamongan</item>
+        <item>Selatung</item>
+        <item>Kediri</item>
+        <item>Tanjungan</item>
+    </string-array>
+
+
+    <string name="google_aplication_id">942831070048-a6aeame8lpg361u65thbvmni6olugsmb.apps.googleusercontent.com </string>
+
+    <string name="minimum_password">Masukan password minimum 6 karakter</string>
+    <string name="auth_failed">Authentication Failed</string>
+</resources>
